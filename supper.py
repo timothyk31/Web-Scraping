@@ -5,4 +5,3 @@ html_text = requests.get('https://engineering.tamu.edu/cse/profiles/index.html#F
 soup = BeautifulSoup(html_text, 'lxml')
 desc = soup.find_all('div', class_ = 'profile')
 results = ''
-print(soup)
